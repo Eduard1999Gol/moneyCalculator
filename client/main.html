@@ -3,26 +3,20 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
   {{> hello}}
-  {{> info}}
 </body>
 
 <template name="hello">
-  <button class="w-56 h-20 text-2xl  border-2 border-white bg-gradient-to-br from-green-300 to-green-600 text-white rounded-xl text-base font-medium mb-2  ml-3" id="cart">
+  <h1
+    class="cursor-pointer text-slate-500 hover:text-blue-600 text-center text-3xl m-5"
+  >
+    Calculator
+</h1>
+  <button
+    class="w-56 h-20 text-2xl border-2 border-white bg-gradient-to-br from-green-300 to-green-600 text-white rounded-xl text-base font-medium mb-2 ml-3"
+    id="cart"
+  >
     click
- </button>
+  </button>
   <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
 </template>
